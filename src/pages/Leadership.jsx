@@ -43,7 +43,7 @@ const Leadership = () => {
                 <div className="mb-24 bg-primaryGreen rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
                     <div className="lg:w-2/5 relative h-96 lg:h-auto">
                         <img
-                            src="https://images.unsplash.com/photo-1541933540131-7e89e0239a58?auto=format&fit=crop&q=80&w=800"
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
                             alt="Albert Mupenzi"
                             className="w-full h-full object-cover grayscale brightness-90"
                         />

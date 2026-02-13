@@ -49,8 +49,8 @@ const Products = () => {
                     <div className="order-2 lg:order-1">
                         <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
                             <img
-                                src="https://images.unsplash.com/photo-1541933540131-7e89e0239a58?auto=format&fit=crop&q=80&w=1000"
-                                alt="Quality Control"
+                                src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1000"
+                                alt="Quality Control Laboratory"
                                 className="w-full h-full object-cover"
                             />
                         </div>

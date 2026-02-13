@@ -90,8 +90,8 @@ const Home = () => {
                         <div className="relative">
                             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="https://images.unsplash.com/photo-1541933540131-7e89e0239a58?auto=format&fit=crop&q=80&w=1000"
-                                    alt="Industrial Mining"
+                                    src="https://images.unsplash.com/photo-1525230071276-4a87f42f469e?auto=format&fit=crop&q=80&w=1000"
+                                    alt="Modern African Mining Site"
                                     className="w-full h-full object-cover"
                                 />
                             </div>

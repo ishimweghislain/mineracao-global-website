@@ -17,8 +17,8 @@ const About = () => {
                     <div className="relative">
                         <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1516192511155-07447d8aefdd?auto=format&fit=crop&q=80&w=1000"
-                                alt="Mining Professional"
+                                src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&q=80&w=1000"
+                                alt="Representative African Mining Professional"
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -45,7 +45,7 @@ const About = () => {
                             <Target className="text-primaryOrange" size={28} />
                         </div>
                         <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                        <p className="text-warmGray/70 leading-relaxed">
+                        <p className="text-warmGray/90 leading-relaxed">
                             To successfully transition from mineral exploration to full-scale mining and gold refining in Angola, setting a benchmark for ethical and sustainable practices in the region.
                         </p>
                     </Card>
