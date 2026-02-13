@@ -32,7 +32,7 @@ const Leadership = () => {
     ];
 
     return (
-        <div className="pt-32 pb-24">
+        <div className="pt-16 pb-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
                 <SectionTitle
                     title="Our Leadership"
@@ -43,7 +43,7 @@ const Leadership = () => {
                 <div className="mb-24 bg-primaryGreen rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
                     <div className="lg:w-2/5 relative h-96 lg:h-auto">
                         <img
-                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
+                            src="https://images.unsplash.com/photo-1541933540131-7e89e0239a58?auto=format&fit=crop&q=80&w=800"
                             alt="Albert Mupenzi"
                             className="w-full h-full object-cover grayscale brightness-90"
                         />

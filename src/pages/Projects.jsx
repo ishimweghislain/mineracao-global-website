@@ -10,7 +10,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className="pt-32 pb-24">
+        <div className="pt-16 pb-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <SectionTitle
                     title="Current Projects"
@@ -50,7 +50,7 @@ const Projects = () => {
                     <div className="grid grid-cols-1 gap-6">
                         <div className="rounded-2xl overflow-hidden shadow-xl aspect-video">
                             <img
-                                src="https://images.unsplash.com/photo-1541933540131-7e89e0239a58?auto=format&fit=crop&q=80&w=1000"
+                                src="https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&q=80&w=1000"
                                 alt="Industrial Mining"
                                 className="w-full h-full object-cover"
                             />

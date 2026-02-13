@@ -14,7 +14,7 @@ const Home = () => {
     ];
 
     return (
-        <div className="pt-20">
+        <div>
             {/* Hero Section */}
             <section className="relative h-[90vh] flex items-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
@@ -90,8 +90,8 @@ const Home = () => {
                         <div className="relative">
                             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="https://images.unsplash.com/photo-1516192511155-07447d8aefdd?auto=format&fit=crop&q=80&w=1000"
-                                    alt="Mining Professional"
+                                    src="https://images.unsplash.com/photo-1541933540131-7e89e0239a58?auto=format&fit=crop&q=80&w=1000"
+                                    alt="Industrial Mining"
                                     className="w-full h-full object-cover"
                                 />
                             </div>

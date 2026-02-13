@@ -14,7 +14,7 @@ const Products = () => {
     ];
 
     return (
-        <div className="pt-32 pb-24">
+        <div className="pt-16 pb-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <SectionTitle
                     title="Our Products"
@@ -49,7 +49,7 @@ const Products = () => {
                     <div className="order-2 lg:order-1">
                         <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
                             <img
-                                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000"
+                                src="https://images.unsplash.com/photo-1541933540131-7e89e0239a58?auto=format&fit=crop&q=80&w=1000"
                                 alt="Quality Control"
                                 className="w-full h-full object-cover"
                             />
