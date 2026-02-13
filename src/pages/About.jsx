@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 import Card from '../components/Card';
-import { History, Target, Eye, ShieldCheck } from 'lucide-react';
+import { History, Target, Eye, ShieldCheck, Globe, TrendingUp } from 'lucide-react';
 
 const About = () => {
     return (
