@@ -8,13 +8,13 @@ const Products = () => {
             title: 'Refined Gold (Au)',
             desc: 'High-purity gold bars (18-24 carats) sourced from our premier Angolan concessions.',
             icon: Coins,
-            image: '/imageofwebsite/gold-detector5.png'
+            image: '/imageofwebsite/refinedgold.png'
         },
         {
             title: 'Tantalite Ore',
             desc: 'Strategic mineral used in global high-tech electronics and capacitive components.',
             icon: Gem,
-            image: '/imageofwebsite/gold-detector6.png'
+            image: '/imageofwebsite/tantalite ore.png'
         },
     ];
 
@@ -133,7 +133,7 @@ const Products = () => {
                     </div>
                     <div className="lg:w-1/2 w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-500">
                         <img
-                            src="/imageofwebsite/gold-detector4.png"
+                            src="/imageofwebsite/qualityassurance.png"
                             alt="Quality Assurance Lab"
                             className="w-full h-full object-cover"
                         />

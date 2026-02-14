@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SectionTitle from '../components/SectionTitle';
 import Card from '../components/Card';
+import { Link } from 'react-router-dom';
 import { Hammer, MapPin, Pickaxe, BarChart3, Ruler, ListOrdered, Droplets, Layers } from 'lucide-react';
 
 const Projects = () => {
@@ -110,11 +111,11 @@ const Projects = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <Card className="bg-charcoal text-white border-none">
                             <h4 className="font-bold text-primaryOrange mb-2">Layer 1: Overburden</h4>
-                            <p className="text-sm opacity-70">Black clay soil with grasses, average thickness of 1.5m along rivers.</p>
+                            <p className="text-sm text-white font-medium">Black clay soil with grasses, average thickness of 1.5m along rivers.</p>
                         </Card>
                         <Card className="bg-primaryGreen text-white border-none">
                             <h4 className="font-bold text-primaryOrange mb-2">Layer 2: Lateritic</h4>
-                            <p className="text-sm opacity-70">Follows the clay soil, roughly 1m of thickness.</p>
+                            <p className="text-sm text-white font-medium">Follows the clay soil, roughly 1m of thickness.</p>
                         </Card>
                         <Card className="bg-beige border-none">
                             <h4 className="font-bold text-primaryGreen mb-2">Layer 3: Placer</h4>
@@ -255,10 +256,13 @@ const Projects = () => {
                             Research for primary resources will follow after the bankable feasibility study.
                         </p>
                     </div>
-                    <button className="px-10 py-5 bg-primaryOrange rounded-full font-black uppercase text-sm hover:scale-105 transition-transform shadow-2xl flex items-center group">
+                    <Link
+                        to="/contact"
+                        className="px-10 py-5 bg-primaryOrange rounded-full font-black uppercase text-sm hover:scale-105 transition-transform shadow-2xl flex items-center group"
+                    >
                         Inquire About Project
                         <Pickaxe className="ml-3 group-hover:rotate-45 transition-transform" size={20} />
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

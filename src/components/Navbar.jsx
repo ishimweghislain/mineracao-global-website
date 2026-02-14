@@ -44,8 +44,8 @@ const Navbar = () => {
     return (
         <nav
             className={`sticky top-0 w-full z-50 transition-all duration-500 ${scrolled
-                    ? 'bg-primaryGreen/95 backdrop-blur-lg shadow-xl py-2'
-                    : 'bg-primaryGreen py-4'
+                ? 'bg-primaryGreen/95 backdrop-blur-lg shadow-xl py-2'
+                : 'bg-primaryGreen py-4'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,11 +53,17 @@ const Navbar = () => {
                     {/* Logo */}
                     <Link
                         to="/"
-                        className="flex-shrink-0 flex items-center group"
+                        className="flex-shrink-0 flex items-center group gap-3"
                     >
+                        <div className="relative h-10 w-10 md:h-12 md:w-12 overflow-hidden rounded-xl border border-white/20 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <img
+                                src="/imageofwebsite/iconofmineracao.png"
+                                alt="Logo"
+                                className="h-full w-full object-cover"
+                            />
+                        </div>
                         <div className="relative">
-                            <div className="absolute inset-0 bg-primaryOrange/20 rounded-lg blur-md group-hover:bg-primaryOrange/30 transition-all duration-300"></div>
-                            <h1 className="relative text-white font-black text-xl md:text-2xl tracking-tight px-2 py-1">
+                            <h1 className="relative text-white font-black text-xl md:text-2xl tracking-tighter">
                                 MINERACAO<span className="text-primaryOrange">GLOBAL</span>
                             </h1>
                         </div>
