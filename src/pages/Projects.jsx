@@ -109,14 +109,14 @@ const Projects = () => {
                         <h3 className="text-2xl font-bold text-primaryGreen uppercase tracking-widest leading-none">Local Geology & Soil layers</h3>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <Card className="bg-charcoal text-white border-none">
+                        <div className="bg-charcoal text-white rounded-2xl shadow-md p-8 border border-white/10 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
                             <h4 className="font-bold text-primaryOrange mb-2">Layer 1: Overburden</h4>
                             <p className="text-sm text-white font-medium">Black clay soil with grasses, average thickness of 1.5m along rivers.</p>
-                        </Card>
-                        <Card className="bg-primaryGreen text-white border-none">
+                        </div>
+                        <div className="bg-primaryGreen text-white rounded-2xl shadow-md p-8 border border-white/10 hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
                             <h4 className="font-bold text-primaryOrange mb-2">Layer 2: Lateritic</h4>
                             <p className="text-sm text-white font-medium">Follows the clay soil, roughly 1m of thickness.</p>
-                        </Card>
+                        </div>
                         <Card className="bg-beige border-none">
                             <h4 className="font-bold text-primaryGreen mb-2">Layer 3: Placer</h4>
                             <p className="text-sm text-charcoal/70">Mineralized gravels, thickness varies from 0.5m to 2m. High gold potential.</p>

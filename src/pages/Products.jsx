@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
-import { Gem, Coins, ShieldCheck, Factory, Box, Recycle, Droplets, Zap, Filter, Globe } from 'lucide-react';
+import { Gem, Coins, ShieldCheck, Factory, Box, Recycle, Droplets, Zap, Filter, Globe, Eye, Download } from 'lucide-react';
 
 const Products = () => {
     const products = [
@@ -131,12 +131,34 @@ const Products = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-500">
+                    <div className="lg:w-1/2 w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative group">
                         <img
                             src="/imageofwebsite/qualityassurance.png"
                             alt="Quality Assurance Lab"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
+                        <div className="absolute inset-0 bg-primaryGreen/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-6 backdrop-blur-sm">
+                            <a
+                                href="/imageofwebsite/qualityassurance.png"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="h-16 w-16 bg-white rounded-full flex items-center justify-center text-primaryGreen hover:bg-primaryOrange hover:text-white transition-all transform hover:scale-110 shadow-xl"
+                                title="Preview Certificate"
+                            >
+                                <Eye size={28} />
+                            </a>
+                            <a
+                                href="/imageofwebsite/qualityassurance.png"
+                                download="Mineracao_Global_Certificate.png"
+                                className="h-16 w-16 bg-white rounded-full flex items-center justify-center text-primaryGreen hover:bg-primaryOrange hover:text-white transition-all transform hover:scale-110 shadow-xl"
+                                title="Download Certificate"
+                            >
+                                <Download size={28} />
+                            </a>
+                        </div>
+                        <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
+                            <p className="text-white text-xs font-bold uppercase tracking-widest text-center">Click to Preview or Download Certification</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -73,7 +73,7 @@ const Home = () => {
                         <div className="lg:w-1/2 relative">
                             <div className="aspect-square rounded-[2rem] overflow-hidden shadow-2xl">
                                 <img
-                                    src="/imageofwebsite/gold-detector5.png"
+                                    src="/imageofwebsite/goldenrichment.png"
                                     alt="Gold Enrichment"
                                     className="w-full h-full object-cover"
                                 />
