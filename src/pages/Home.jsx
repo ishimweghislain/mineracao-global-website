@@ -127,15 +127,20 @@ const Home = () => {
             <div className="py-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-charcoal rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden group">
-                        <div className="absolute inset-0 bg-primaryGreen opacity-0 group-hover:opacity-10 transition-opacity"></div>
-                        <h2 className="text-4xl md:text-5xl font-black text-white mb-8 tracking-tighter">Ready to partner in the <br /><span className="text-primaryOrange italic underline decoration-white/20">Angolan mineral revolution?</span></h2>
-                        <Link
-                            to="/contact"
-                            className="inline-flex items-center justify-center px-12 py-5 bg-primaryOrange hover:bg-white hover:text-primaryGreen text-white font-black rounded-full transition-all text-lg shadow-2xl"
-                        >
-                            Connect with us
-                            <ArrowRight className="ml-3" size={24} />
-                        </Link>
+                        <div className="absolute inset-0 bg-primaryGreen opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none"></div>
+                        <div className="relative z-10">
+                            <h2 className="text-4xl md:text-5xl font-black text-white mb-8 tracking-tighter">
+                                Ready to partner in the <br />
+                                <span className="text-primaryOrange italic underline decoration-white/20">Angolan mineral revolution?</span>
+                            </h2>
+                            <Link
+                                to="/contact"
+                                className="inline-flex items-center justify-center px-12 py-5 bg-primaryOrange hover:bg-white hover:text-primaryGreen text-white font-black rounded-full transition-all text-lg shadow-2xl"
+                            >
+                                Connect with us
+                                <ArrowRight className="ml-3" size={24} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
