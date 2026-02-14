@@ -40,12 +40,12 @@ const About = () => {
 
                 {/* Mission & Vision */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
-                    <Card className="bg-primaryGreen text-white border-none">
+                    <Card className="!bg-primaryGreen !text-white border-none">
                         <div className="h-12 w-12 bg-white/10 rounded-xl flex items-center justify-center mb-6">
                             <Target className="text-primaryOrange" size={28} />
                         </div>
-                        <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                        <p className="text-warmGray/90 leading-relaxed">
+                        <h3 className="text-2xl font-bold mb-4 !text-white">Our Mission</h3>
+                        <p className="!text-white opacity-90 leading-relaxed">
                             To successfully transition from mineral exploration to full-scale mining and gold refining in Angola, setting a benchmark for ethical and sustainable practices in the region.
                         </p>
                     </Card>
