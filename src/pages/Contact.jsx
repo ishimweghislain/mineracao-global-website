@@ -27,7 +27,7 @@ const Contact = () => {
 
         // Mocking success based on common logic
         if (formData.email.includes('@')) {
-            toast.success('Your message has been sent successfully!', {
+            toast.success('Sent! Logged to ishimweghislain82@gmail.com', {
                 style: {
                     border: '1px solid #004D40',
                     padding: '16px',
