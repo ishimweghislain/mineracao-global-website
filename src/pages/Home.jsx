@@ -19,7 +19,7 @@ const Home = () => {
             <section className="relative h-[90vh] flex items-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&q=80&w=1920"
+                        src="/imageofwebsite/gold-detector1.png"
                         alt="Mining Background"
                         className="w-full h-full object-cover brightness-[0.4]"
                     />
@@ -90,7 +90,7 @@ const Home = () => {
                         <div className="relative">
                             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="https://images.unsplash.com/photo-1525230071276-4a87f42f469e?auto=format&fit=crop&q=80&w=1000"
+                                    src="/imageofwebsite/gold-detector2png.png"
                                     alt="Modern African Mining Site"
                                     className="w-full h-full object-cover"
                                 />

@@ -49,7 +49,7 @@ const Products = () => {
                     <div className="order-2 lg:order-1">
                         <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
                             <img
-                                src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=1000"
+                                src="/imageofwebsite/gold-detector1.png"
                                 alt="Quality Control Laboratory"
                                 className="w-full h-full object-cover"
                             />

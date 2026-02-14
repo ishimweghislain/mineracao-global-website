@@ -17,7 +17,7 @@ const About = () => {
                     <div className="relative">
                         <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&q=80&w=1000"
+                                src="/imageofwebsite/gold-detector3.png"
                                 alt="Representative African Mining Professional"
                                 className="w-full h-full object-cover"
                             />
