@@ -7,9 +7,9 @@ import emailjs from '@emailjs/browser';
 
 // ─── EmailJS Configuration ───────────────────────────────────────────────────
 // Go to https://www.emailjs.com/ → sign in → get these 3 values:
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz456'
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';   // e.g. 'AbCdEfGhIjKlmNo'
+const EMAILJS_SERVICE_ID = 'service_oqa07l1';
+const EMAILJS_TEMPLATE_ID = 'template_c3086xu';
+const EMAILJS_PUBLIC_KEY = 'DPFYVzWSXeVbXHmnj';
 // ─────────────────────────────────────────────────────────────────────────────
 
 const Contact = () => {
