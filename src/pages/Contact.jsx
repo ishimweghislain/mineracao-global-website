@@ -3,6 +3,14 @@ import SectionTitle from '../components/SectionTitle';
 import Card from '../components/Card';
 import { Phone, Mail, MapPin, Send, Globe, Loader2 } from 'lucide-react';
 import toast from 'react-hot-toast';
+import emailjs from '@emailjs/browser';
+
+// ─── EmailJS Configuration ───────────────────────────────────────────────────
+// Go to https://www.emailjs.com/ → sign in → get these 3 values:
+const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz456'
+const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';   // e.g. 'AbCdEfGhIjKlmNo'
+// ─────────────────────────────────────────────────────────────────────────────
 
 const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,12 +30,23 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        try {
+            await emailjs.send(
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    phone: formData.phone || 'Not provided',
+                    subject: formData.subject,
+                    message: formData.message,
+                    to_email: 'mineracaoglobal1@gmail.com',
+                    reply_to: formData.email,
+                },
+                EMAILJS_PUBLIC_KEY
+            );
 
-        // Mocking success based on common logic
-        if (formData.email.includes('@')) {
-            toast.success('Sent! Logged to ishimweghislain82@gmail.com', {
+            toast.success('Message sent successfully!', {
                 style: {
                     border: '1px solid #004D40',
                     padding: '16px',
@@ -40,6 +59,7 @@ const Contact = () => {
                     primary: '#FF8A00',
                     secondary: '#fff',
                 },
+                duration: 5000,
             });
             setFormData({
                 name: '',
@@ -48,8 +68,9 @@ const Contact = () => {
                 subject: 'General Inquiry',
                 message: ''
             });
-        } else {
-            toast.error('Failed to send message. Please check your email.', {
+        } catch (error) {
+            console.error('EmailJS error:', error);
+            toast.error('Failed to send message. Please try again or contact us directly.', {
                 style: {
                     border: '1px solid #D32F2F',
                     padding: '16px',
@@ -57,10 +78,12 @@ const Contact = () => {
                     background: '#FFEBEE',
                     borderRadius: '12px',
                     fontWeight: 'bold'
-                }
+                },
+                duration: 5000,
             });
+        } finally {
+            setIsSubmitting(false);
         }
-        setIsSubmitting(false);
     };
 
     return (
